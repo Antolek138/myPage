@@ -161,6 +161,47 @@ a {
 	}
 }
 
+.about {
+	text-align: center;
+	color: c.$blackDark;
+	background-color: c.$white;
+
+	&__title {
+		margin-bottom: 2em;
+		font-size: 2.4rem;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 0 1em;
+	}
+
+	&__text {
+		max-width: 320px;
+	}
+
+	&__middle {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+
+	&__middle-text {
+		margin: 2em 0;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__line {
+		width: 3px;
+		height: 80px;
+		background-color: c.$bgColorOne;
+	}
+}
+
 //?===========
 //?MEDIA QUERES
 //?===========
@@ -209,11 +250,17 @@ a {
 
 	.advantages {
 		&__container {
-            align-items: stretch;
+			align-items: stretch;
 			justify-content: center;
 			flex-direction: row;
 			flex-wrap: wrap;
 			gap: 50px;
+		}
+	}
+
+	.about {
+		&__text {
+			max-width: 360px;
 		}
 	}
 }
@@ -242,9 +289,20 @@ a {
 		}
 	}
 
-    .advantages{
-        &__card{
-            max-width: 360px;
-        }
-    }
+	.advantages {
+		&__card {
+			max-width: 360px;
+		}
+	}
+
+	.about {
+		&__text {
+			max-width: 480px;
+		}
+
+		&__middle {
+			flex-direction: row;
+			gap: 0 50px;
+		}
+	}
 }
