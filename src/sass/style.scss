@@ -202,6 +202,72 @@ a {
 	}
 }
 
+.offers {
+	&__title {
+		margin-bottom: 2em;
+		font-size: 2.4rem;
+		text-align: center;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 50px 0;
+	}
+
+	&__card {
+		padding: 1em;
+		background-color: c.$bgColorTwo;
+		border-radius: 10px;
+
+		&--middle {
+			color: c.$blackDark;
+			background-color: c.$white;
+		}
+	}
+
+	&__type {
+		font-weight: 600;
+	}
+
+	&__cost {
+		margin: 0.5em 0;
+		font-size: 2rem;
+	}
+
+	&__list {
+		list-style: none;
+
+		i {
+			margin-right: 0.5em;
+			color: c.$primary;
+		}
+	}
+
+	&__list-item {
+		margin-bottom: 0.5em;
+
+		&:nth-last-child(1) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__btn {
+		display: block;
+		margin: 2em 0 1em 0;
+		padding: 0.5em 1em;
+		width: clamp(100px, 120px, 140px);
+		border-radius: 10px;
+		border: none;
+
+		&--middle {
+			color: c.$white;
+			background-color: c.$blackDark;
+		}
+	}
+}
+
 //?===========
 //?MEDIA QUERES
 //?===========
@@ -263,6 +329,23 @@ a {
 			max-width: 360px;
 		}
 	}
+
+	.offers {
+		&__container {
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 50px;
+		}
+
+		&__card--middle {
+			order: 3;
+		}
+
+		&__card--right {
+			order: 2;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -303,6 +386,32 @@ a {
 		&__middle {
 			flex-direction: row;
 			gap: 0 50px;
+		}
+	}
+
+	.offers {
+		&__card {
+			&--middle {
+				order: 2;
+			}
+
+			&--right {
+				order: 3;
+			}
+		}
+
+		&__btn {
+			transition: color 0.3s, background-color 0.3s;
+
+			&--left:hover,
+			&--right:hover {
+				color: c.$white;
+				background-color: c.$blackDark;
+			}
+
+			&--middle:hover{
+				background-color: c.$primary;
+			}
 		}
 	}
 }
