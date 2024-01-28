@@ -11,6 +11,7 @@
 }
 
 html {
+	scroll-behavior: smooth;
 	font-size: 62.5%;
 }
 
@@ -38,7 +39,11 @@ a {
 }
 
 .nav {
+	position: sticky;
+	top: 0;
+	left: 0;
 	background-color: c.$bgColorOne;
+	z-index: 100;
 
 	&__container {
 		position: relative;
@@ -129,7 +134,7 @@ a {
 		border-radius: 10px;
 		border: none;
 		color: c.$textColorOne;
-		background-color: c.$bgColorTwo;
+		background-color: c.$secondary;
 	}
 }
 
