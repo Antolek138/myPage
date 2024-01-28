@@ -233,14 +233,16 @@ a {
 
 	&__cost {
 		margin: 0.5em 0;
-		font-size: 2rem;
+		font-size: 2.4rem;
 	}
 
 	&__list {
+		font-size: 1.8rem;
 		list-style: none;
 
 		i {
 			margin-right: 0.5em;
+			font-size: 2rem;
 			color: c.$primary;
 		}
 	}
@@ -258,8 +260,14 @@ a {
 		margin: 2em 0 1em 0;
 		padding: 0.5em 1em;
 		width: clamp(100px, 120px, 140px);
+		font-size: 1.8rem;
 		border-radius: 10px;
 		border: none;
+
+		&--left,
+		&--right {
+			color: c.$blackDark;
+		}
 
 		&--middle {
 			color: c.$white;
@@ -409,7 +417,7 @@ a {
 				background-color: c.$blackDark;
 			}
 
-			&--middle:hover{
+			&--middle:hover {
 				background-color: c.$primary;
 			}
 		}
