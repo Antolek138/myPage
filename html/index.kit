@@ -154,7 +154,38 @@
             </div>
         </section>
 
+        <section class="contact ptb">
+            <div class="wrapper">
+
+                <p class="contact__title">Kontakt</p>
+
+                <div class="contact__container">
+
+                    <form action="mail.php" method="post" class="contact__form">
+                        <div class="contact__box">
+                            <label for="name">Imię:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="contact__box">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="contact__box">
+                            <label for="msg">Wiadomość:</label>
+                            <textarea name="msg" id="msg" required></textarea>
+                        </div>
+                        <button class="contact__btn">Wyślij</button>
+                    </form>
+
+                    <p class="contact__msg-status"></p>
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
+    <!-- @include _footer.kit -->
 
     <script src="./dist/js/script.min.js"></script>
 </body>
