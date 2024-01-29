@@ -239,7 +239,7 @@ a {
 	}
 
 	&__cost {
-		margin: 0.5em 0;
+		margin: 1em 0;
 		font-size: 2.4rem;
 	}
 
@@ -279,6 +279,17 @@ a {
 		&--middle {
 			color: c.$white;
 			background-color: c.$blackDark;
+		}
+	}
+
+	&__link {
+		padding: 4em 1em 0 1em;
+		text-align: center;
+
+		a {
+			display: block;
+			margin-top: 2em;
+			color: c.$secondary;
 		}
 	}
 }
@@ -489,6 +500,12 @@ a {
 	}
 
 	.offers {
+		min-height: 100svh;
+
+		&__container {
+			gap: 100px;
+		}
+
 		&__card {
 			&--middle {
 				order: 2;
@@ -510,6 +527,19 @@ a {
 
 			&--middle:hover {
 				background-color: c.$primary;
+			}
+		}
+
+		&__link {
+			padding: 6em 1em 0 1em;
+			font-size: 2rem;
+
+			a {
+				transition: color 0.3s;
+
+				&:hover {
+					color: c.$primary;
+				}
 			}
 		}
 	}
