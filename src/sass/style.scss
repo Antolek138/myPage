@@ -298,77 +298,24 @@ a {
 	color: c.$blackDark;
 	background-color: c.$white;
 
-	&__title {
-		font-size: 2.4rem;
-		text-align: center;
-	}
-
 	&__container {
-		position: relative;
 		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
-
-	&__form {
-		width: 80%;
-	}
-
-	&__box {
-		display: flex;
-		flex-direction: column;
-		margin: 4em 0;
-	}
-
-	&__btn {
-		display: block;
-		padding: 1em 2em;
-		width: 100%;
-		font-size: 1.8rem;
-		color: c.$white;
-		background-color: c.$secondary;
-		border: none;
-	}
-
-	&__msg-status {
-		position: absolute;
-		top: 5%;
-		display: none;
 		align-items: center;
 		justify-content: center;
-		padding: 1em 2em;
-		width: clamp(280px, 320px, 340px);
+		flex-direction: column;
+		padding: 0 1em 3em 1em;
+		min-height: 55svh;
 		text-align: center;
+	}
 
-		&--error {
-			display: flex;
-			background-color: tomato;
+	&__text {
+		font-size: 2.2rem;
+		font-weight: 900;
+
+		&--two {
+			margin-top: 3.5em;
+			font-size: 1.8rem;
 		}
-
-		&--succes {
-			display: flex;
-			background-color: lime;
-		}
-	}
-
-	label {
-		margin-bottom: 1em;
-		font-size: 2rem;
-	}
-
-	// input {
-	// 	height: 30px;
-	// }
-
-	textarea {
-		resize: vertical;
-		min-height: 150px;
-		max-height: 350px;
-	}
-
-	input,
-	textarea {
-		padding: 1em;
 	}
 }
 
@@ -376,6 +323,8 @@ a {
 	padding: 1em 2em;
 	font-size: 2rem;
 	text-align: center;
+	color: c.$blackDark;
+	background-color: c.$bgColorThree;
 }
 
 //?===========
@@ -454,6 +403,20 @@ a {
 
 		&__card--right {
 			order: 2;
+		}
+	}
+
+	.contact {
+		&__container {
+			min-height: 60svh;
+		}
+
+		&__text {
+			font-size: 2.8rem;
+
+			&--two {
+				font-size: 2rem;
+			}
 		}
 	}
 }
@@ -540,16 +503,6 @@ a {
 				&:hover {
 					color: c.$primary;
 				}
-			}
-		}
-	}
-
-	.contact {
-		&__btn {
-			transition: background-color 0.3s;
-
-			&:hover {
-				background-color: c.$primary;
 			}
 		}
 	}
