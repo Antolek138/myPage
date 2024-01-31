@@ -60,7 +60,7 @@ a {
 		align-items: center;
 		justify-content: space-around;
 		flex-direction: column;
-		height: calc(100svh - 60px);
+		height: calc(100dvh - 60px);
 		width: 100%;
 		translate: -150% 0;
 		transition: translate 0.3s;
@@ -137,6 +137,7 @@ a {
 		align-items: center;
 		flex-direction: column;
 		gap: 80px 0;
+		padding-bottom: 4em;
 	}
 
 	&__card {
@@ -164,10 +165,10 @@ a {
 	color: c.$blackDark;
 	background-color: c.$white;
 
-	&__title {
-		margin-bottom: 2em;
-		font-size: 2.4rem;
-	}
+	// &__title {
+	// 	margin-bottom: 2em;
+	// 	font-size: 2.4rem;
+	// }
 
 	&__container {
 		display: flex;
@@ -201,11 +202,11 @@ a {
 }
 
 .offers {
-	&__title {
-		margin-bottom: 2em;
-		font-size: 2.4rem;
-		text-align: center;
-	}
+	// &__title {
+	// 	margin-bottom: 2em;
+	// 	font-size: 2.4rem;
+	// 	text-align: center;
+	// }
 
 	&__container {
 		display: flex;
@@ -434,6 +435,14 @@ a {
 		&__title {
 			font-size: 5.6rem;
 		}
+
+		&__btn {
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: c.$primary;
+			}
+		}
 	}
 
 	.advantages {
@@ -443,6 +452,8 @@ a {
 	}
 
 	.about {
+		min-height: 80dvh;
+
 		&__text {
 			max-width: 480px;
 		}
@@ -496,5 +507,19 @@ a {
 				}
 			}
 		}
+	}
+
+	.contact {
+		&__text {
+			font-size: 4.2rem;
+
+			&--two {
+				font-size: 2.2rem;
+			}
+		}
+	}
+
+	.footer {
+		font-size: 2.4rem;
 	}
 }
