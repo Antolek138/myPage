@@ -1,0 +1,9 @@
+[data-animation='header'] {
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+
+[data-animation='card'] {
+	translate: 150% 0;
+	transition: translate 0.5s;
+}

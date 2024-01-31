@@ -23,5 +23,37 @@ const footerData = () => {
 	spanData.textContent = year
 }
 
+const animationHeader = () => {
+	const animationHeader = document.querySelectorAll('[data-animation="header"]')
+
+	animationHeader.forEach(item => {
+		setTimeout(() => {
+			item.style.opacity = 1
+		}, 300)
+	})
+}
+
+const test1 = document.querySelector('.advantages__card:nth-child(2)')
+console.log(test1.offsetTop)
+
+const test = () => {
+	const animationsCard = document.querySelectorAll('.advantages__card')
+	const indexCard = [0, 1, 2]
+
+	animationsCard.forEach((item, index) => {
+		if (index === indexCard[0] && scrollY >= 250) {
+			item.style.translate = 0
+		}
+		if (index === indexCard[1] && scrollY >= 500) {
+			item.style.translate = 0
+		}
+		if (index === indexCard[2] && scrollY >= 1000) {
+			item.style.translate = 0
+		}
+	})
+}
+
+document.addEventListener('scroll', test)
+animationHeader()
 footerData()
 bars.addEventListener('click', showMenu)

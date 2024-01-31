@@ -132,6 +132,8 @@ a {
 }
 
 .advantages {
+	overflow: hidden;
+	
 	&__container {
 		display: flex;
 		align-items: center;
